@@ -2,6 +2,7 @@ package day22;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -34,18 +35,19 @@ public class Quiz02 extends Application{
 		Label img = new Label("Search",new ImageView("/img/search.png"));
 		Label rct = new Label("values");
 		Label wrap = new Label("A label that needs to be wrapped");
-		HBox wrBox = new HBox();
+		
 		img.setFont(new Font(25));
 		img.setTextFill(Color.web("#5CD1E5"));
 		
-		rct.setFont(new Font(30));
+		rct.setFont(new Font(40));
 		rct.setRotate(270);
 		rct.setTranslateY(60);
 		
-		
+		HBox wrBox = new HBox();
 		wrap.setWrapText(true);
 		wrBox.setPadding(new Insets(40,0,0,0));
 		wrBox.setPrefSize(100, 100);
+		wrBox.setAlignment(Pos.TOP_RIGHT);
 		wrBox.getChildren().add(wrap);
 		
 		event ev = new event();
