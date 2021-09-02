@@ -47,7 +47,7 @@ public class Quiz02 extends Application{
 		wrap.setWrapText(true);
 		wrBox.setPadding(new Insets(40,0,0,0));
 		wrBox.setPrefSize(100, 100);
-		wrBox.setAlignment(Pos.TOP_RIGHT);
+		wrBox.setAlignment(Pos.TOP_RIGHT); // 없어도됨
 		wrBox.getChildren().add(wrap);
 		
 		event ev = new event();
